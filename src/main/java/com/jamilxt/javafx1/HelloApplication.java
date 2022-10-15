@@ -16,9 +16,10 @@ public class HelloApplication extends Application {
     }
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage primaryStage) throws IOException {
         Group root = new Group();
         Scene scene = new Scene(root, Color.BLACK);
+        Stage stage = new Stage();
 
         Image icon = new Image(HelloApplication.class.getResource("jamilxt-avatar.jpg").getPath());
         stage.getIcons().add(icon);
